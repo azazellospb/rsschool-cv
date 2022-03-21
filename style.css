@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Slab:wght@300;400;700&display=swap');
+
+* {
+text-decoration: none;
+margin: 0;
+padding: 0;
+font-family: "Roboto Slab", serif;
+}
+a {
+    color: white;
+    text-decoration: none; 
+}
+ul {
+    list-style-position: inside;
+ }
+body {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-position: center;
+    background-size: cover;
+    margin-top: 50px;
+}
+.wrapper {
+    display:flex;
+    justify-content: center;
+}
+.subBlock {
+    width: 75px;
+}
+.langBlock {
+    display:flex;
+}
+.colorGrey {
+    color: #464646;
+}
+.ta_r {
+    text-align: right;
+}
+.centrilize {
+    background-image: linear-gradient(180deg, #03a8f4c0 10%, #1ac75cc0 50%);
+    border-radius: 15px;
+    width: 50vw;
+    height: auto;
+    padding: 20px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1020px;
+    gap:10px;
+    min-width: 480px;
+}
+.mainPhoto {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    background-position: center;
+    background-size: contain;
+    object-fit: scale-down;
+    margin: 5px;
+}
+.pos_rel {
+    position: relative;
+}
+.pos_abs {
+    position: absolute;
+}
+.display_flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.display_grid {
+    display: grid;
+    margin: 10px;
+    justify-items: center;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+
+.leftBlock {
+    border-radius: 0.5mm;
+    background: rgba(255, 255, 255, 0.404);
+    border-radius: 15px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    font-size: 15px;
+    height: auto;
+    padding: 5px;
+    display: grid;
+    
+}
+.rightBlock {
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.219);
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    font-size: 15px;
+    background-color: white;
+    height: auto;
+    padding: 14px;
+    min-width: 180px;
+ 
+}
+.default {
+    width:100vw;
+    height: 100vh;
+    position:relative;
+}
+.shadowPadding {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(240, 255, 255, 0.356);
+    margin: 5px;
+    color: white;
+
+}
+.align {    
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.tag_Right {
+    padding: 5px;
+    background-color: #545454;
+    color: white;
+    border-radius: 3px;
+    width: auto;
+    display: flex;
+    font-family: "Roboto Slab", serif;
+
+}
+.z_ind {
+    z-index: 5;
+}
+.z_ind_min1 {
+    z-index: -1;
+}
+hr {
+    transform: translate(0%, -700%);
+}
+
+@media (max-width: 640px) 
+{
+    .centrilize
+    {
+    flex-direction: column;
+    min-width: 276px;
+    }
+}
